@@ -10,7 +10,7 @@
     "start": "node index.js",
     "test": "npm test",
     "watch": "webpack --watch",
-    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js",
+    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack.config.js",
     "webpack": "webpack"
   },
   "repository": {
