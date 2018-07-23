@@ -3,7 +3,6 @@ import threeEntryPoint from './threejs/threeEntryPoint';
 
 export default class ThreeContainer extends Component {
   componentDidMount() {
-    debugger
     threeEntryPoint(this.threeRootElement);
   }
   render () {

@@ -4,7 +4,7 @@ import alphaTexture from '../../../assets/textures/stripes_gradient.jpg';
 export default scene => {    
     const group = new THREE.Group();
 
-    const subjectGeometry = deformGeometry(new THREE.IcosahedronGeometry(10, 2));
+    const subjectGeometry = deformGeometry(new THREE.IcosahedronGeometry(15, 3));
     
     const subjectMaterial = new THREE.MeshStandardMaterial({ color: "#000", transparent: true, side: THREE.DoubleSide, alphaTest: 0.5 });
     subjectMaterial.alphaMap = new THREE.TextureLoader().load(alphaTexture);
@@ -30,7 +30,7 @@ export default scene => {
 
     function deformGeometry(geometry) {
         for (let i=0; i<geometry.vertices.length; i+=2) {
-            const scalar = 1 + Math.random()*0.8;
+            const scalar = 1 + Math.random()*0.2;
             geometry.vertices[i].multiplyScalar(scalar)
         }
 
