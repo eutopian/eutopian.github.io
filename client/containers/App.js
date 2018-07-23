@@ -1,8 +1,13 @@
 import React, {Component} from 'react';
+import ThreeContainers from './ThreeContainers';
 
 class App extends Component {
   render () {
-    return <p>My New App</p>
+    return (
+      <div> 
+        <ThreeContainers />
+      </div>
+    )
   }
 }
 export default App;
