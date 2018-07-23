@@ -11,8 +11,7 @@
     "test": "npm test",
     "watch": "webpack --watch",
     "dev": "webpack-dev-server",
-    "webpack": "webpack",
-    "build": "build"
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
