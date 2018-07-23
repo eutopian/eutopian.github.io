@@ -11,8 +11,7 @@
     "test": "npm test",
     "watch": "webpack --watch",
     "dev": "webpack-dev-server",
-    "webpack": "webpack",
-    "deploy": "gh-pages -d build"
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -25,7 +24,6 @@
   },
   "homepage": "http://eutopian.github.io/",
   "dependencies": {
-    "gh-pages": "^1.2.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.3.1",
