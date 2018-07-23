@@ -1,5 +1,5 @@
 {
-  "name": "margaret-ma-frontend",
+  "name": "eutopian.github.io",
   "version": "1.0.0",
   "description": "who is margaret ma?",
   "keywords": [
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eutopian/margaret-ma-frontend.git"
+    "url": "git+https://github.com/eutopian/eutopian.github.io.git"
   },
   "author": "Margaret Ma",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eutopian/margaret-ma-frontend/issues"
+    "url": "https://github.com/eutopian/eutopian.github.io/issues"
   },
-  "homepage": "https://github.com/eutopian/margaret-ma-frontend#readme",
+  "homepage": "https://github.com/eutopian/eutopian.github.io#readme",
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
