@@ -11,7 +11,9 @@ export default container => {
     render();
 
     function createCanvas(document, container) {
-        const canvas = document.createElement('canvas');     
+        const canvas = document.createElement('canvas');
+        canvas.width = window.innerWidth
+        canvas.height = window.innerHeight     
         container.appendChild(canvas);
         return canvas;
     }
