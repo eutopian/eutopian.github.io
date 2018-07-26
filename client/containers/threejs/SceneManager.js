@@ -24,7 +24,7 @@ export default canvas => {
 
     function buildScene() {
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color("#FFF");
+        scene.background = new THREE.Color("#FFFFFF");
 
         return scene;
     }
@@ -44,7 +44,7 @@ export default canvas => {
     function buildCamera({ width, height }) {
         const aspectRatio = width / height;
         const fieldOfView = 60;
-        const nearPlane = 4;
+        const nearPlane = 1;
         const farPlane = 100; 
         const camera = new THREE.PerspectiveCamera(fieldOfView, aspectRatio, nearPlane, farPlane);
 

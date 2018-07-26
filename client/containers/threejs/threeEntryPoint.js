@@ -13,7 +13,7 @@ export default container => {
     function createCanvas(document, container) {
         const canvas = document.createElement('canvas');
         canvas.width = window.innerWidth
-        canvas.height = window.innerHeight     
+        canvas.height = window.innerHeight
         container.appendChild(canvas);
         return canvas;
     }
@@ -28,8 +28,8 @@ export default container => {
         canvas.style.width = '100%';
         canvas.style.height= '100%';
         
-        canvas.width  = canvas.offsetWidth;
-        canvas.height = canvas.offsetHeight;
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
 
         canvasHalfWidth = Math.round(canvas.offsetWidth/2);
         canvasHalfHeight = Math.round(canvas.offsetHeight/2);

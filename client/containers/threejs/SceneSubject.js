@@ -5,27 +5,26 @@ export default scene => {
     const group = new THREE.Group();
 
     const subjectGeometry = deformGeometry(new THREE.IcosahedronGeometry(12, 2));
+    // const subjectGeometry = deformGeometry(new THREE.SphereGeometry( 5, 32, 32 ));
     
     const subjectMaterial = new THREE.MeshStandardMaterial({ color: "#000", transparent: true, side: THREE.DoubleSide, alphaTest: 0.5 });
     subjectMaterial.alphaMap = new THREE.TextureLoader().load(alphaTexture);
     subjectMaterial.alphaMap.magFilter = THREE.NearestFilter;
     subjectMaterial.alphaMap.wrapT = THREE.RepeatWrapping;
     subjectMaterial.alphaMap.repeat.y = 1;
-
-    const subjectMesh = new THREE.Mesh(subjectGeometry, subjectMaterial);
+    
         
     const subjectWireframe = new THREE.LineSegments(
         new THREE.EdgesGeometry(subjectGeometry),
         new THREE.LineBasicMaterial()
     );
 
-    // group.add(subjectMesh);
     group.add(subjectWireframe);
     scene.add(group);
 
     group.rotation.z = Math.PI/4;
 
-    const speed = 0.02;
+    const speed = 0.04;
     const textureOffsetSpeed = 0.02;
 
     function deformGeometry(geometry) {
