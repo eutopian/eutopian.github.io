@@ -5,6 +5,7 @@ export default scene => {
     const group = new THREE.Group();
 
     const subjectGeometry = deformGeometry(new THREE.IcosahedronGeometry(12, 2));
+    
     // const subjectGeometry = deformGeometry(new THREE.SphereGeometry( 5, 32, 32 ));
     
     const subjectMaterial = new THREE.MeshStandardMaterial({ color: "#000", transparent: true, side: THREE.DoubleSide, alphaTest: 0.5 });
